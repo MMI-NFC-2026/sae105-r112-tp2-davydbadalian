@@ -30,3 +30,9 @@ html:has(.menu:popover-open) {
     transform: rotate(90deg);
     transition: 400ms;
 }
+@media (prefers-reduced-motion: reduce) {
+  .menu,
+  .menu .burger--close {
+    transition: none;
+  }
+}
