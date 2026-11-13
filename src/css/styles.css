@@ -45,3 +45,15 @@ transform: none;
     transition: none;
   }
 }
+/* Image sur toute la largeur */
+.media--fullwidth {
+  width: 100%;
+  height: auto;
+}
+/* Icônes du menu : chemin relatif depuis src/css/, donc ../../ pour remonter à la racine */
+nav>ul>li>a::before {
+  content: url("../../public/icones/bag-plus.svg");
+}
+nav>ul>li>ul>li>a::before {
+  content: url("../../public/icones/archive.svg");
+}
